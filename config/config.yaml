@@ -1,0 +1,57 @@
+
+
+faiss_db:
+  collection_name: "documental_portal"
+
+embedding_model:
+  
+  google:
+    provider: "google"
+    model_name: "models/text-embedding-004"
+  
+  openai:
+    provider: "openai"
+    model_name: "text-embedding-3-large"
+
+
+retriever:
+  top_k: 10
+
+
+llm:
+
+  groq:
+    provider: "groq"
+    model_name: "deepseek-r1-distill-llama-70b"
+    temperature: 0
+    max_tokens: 2048
+
+  
+  google-flash:
+    provider: "google"
+    model_name: "models/gemini-2.5-flash"
+    temperature: 0
+    max_tokens: 2048
+
+  google-pro:
+    provider: 'google'
+    model_name: "gemini-2.5-pro"
+    temperature: 0
+    max_tokens: 2048
+  
+  openai-mini:
+    provider: 'openai'
+    model_name: 'gpt-5-mini-2025-08-07'
+    temperature: 0
+    max_tokens: 2048
+
+  openai-pro:
+    provider: 'openai'
+    model_name: 'gpt-5-2025-08-07'
+    temperature: 0
+    max_tokens: 2048
+
+
+
+
+
